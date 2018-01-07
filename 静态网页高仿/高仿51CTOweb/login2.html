@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录2.0版</title>
+    <link rel="stylesheet" href="login2.css">
+</head>
+<body>
+<div id="box">
+    <img src="LoginPicture/logo_new_v1.jpg"/>
+    <a href="https://edu.51cto.com/"><img src="LoginPicture/loginPicture.jpg"/></a>
+    <div id="first">
+        <ul>
+            <li>登录51CTO</li>
+            <li><a href="">无法登录?&ensp;&ensp;|</a></li>
+            <li><a href="http://localhost:63342/51CTOweb/register2.html" style="color: red">注册</a></li>
+        </ul>
+        <form id="myForm">
+            <input type="text" placeholder="用户名/邮箱/手机" value="" onblur="useName()" id="useNam">
+            <p id="useWarn"></p>
+            <input type="password" placeholder="密码" value="" onblur="passwardTest()" id="pasWard">
+            <p id="passwardWarn"></p>
+            <input type="button" id="dengLu" value="登录">
+            <input type="checkbox" value="">
+            <span>十天内自动登录</span>
+            <a href="">忘记密码？</a>
+        </form>
+        <div id="WeiXinDengLu">微信登录</div>
+        <div id="moreWayLogin">
+            你也可以使用以下账号登录
+            <div id="triangle"></div>
+        </div>
+        <p id="moreWays">
+            <a href="#" style="background-image: url('LoginPicture/logo.png');background-repeat: no-repeat;background-position: 0 -422px;width: 50px;margin-left: 20px">QQ</a>
+            <a href="#" style="background-image: url('LoginPicture/logo.png');background-repeat: no-repeat;background-position: 0 -225px">微博</a>
+            <a href="#" style="background-image: url('LoginPicture/logo.png');background-repeat: no-repeat;background-position: 0 -375px">豆瓣</a>
+            <a href="#" style="background-image: url('LoginPicture/logo.png');background-repeat: no-repeat;background-position: 0 -299px">人人</a>
+            <a href="#" style="background-image: url('LoginPicture/logo.png');background-repeat: no-repeat;background-position: 0 -534px;width: 70px">github</a>
+        </p>
+    </div>
+    <div id="second">
+            <h1>登录51CTO</h1>
+            <span id="backAccount">返回账号登录</span>
+            <img src="LoginPicture/loginWX.png" alt="">
+            <p>请使用微信扫描上方二维码</p>
+            <a href="">使用帮助</a>
+    </div>
+</div>
+<div id="bottom"><!--.........底部.............................................-->
+    <ul>
+        <li>&ensp;关于我们&ensp;&ensp;|</li>
+        <li>&ensp;诚聘英才&ensp;&ensp;|</li>
+        <li>&ensp;联系我们&ensp;&ensp;|</li>
+        <li>&ensp;网站大事&ensp;&ensp;|</li>
+        <li>&ensp;意见反馈&ensp;&ensp;|</li>
+    </ul>
+    <p><img src="LoginPicture/banQuan.png"></p>
+</div>
+<script src="login2.js" type="text/javascript"></script>
+</body>
+</html>

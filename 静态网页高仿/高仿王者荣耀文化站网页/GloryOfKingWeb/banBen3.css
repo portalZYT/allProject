@@ -1,0 +1,851 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#box{
+ /*   border-bottom: 1px solid blue;*/
+    width: 1360px;
+    height:5160px;
+     overflow: hidden;
+}
+header{
+    /* border: 1px solid black;*/
+    width: 1360px;
+    height: 41px;
+}
+header>div{
+    /*  border: 1px solid black;*/
+    width: 1200px;
+    height: 41px;
+    margin-left: 190px;
+    position: relative;
+}
+header>div>a{
+    display: block;
+    text-decoration: none;
+    color:black;
+    width: 222px;
+    height:40px;
+    float: left;
+    position: relative;
+}
+header>div>:nth-child(1){
+    background:url("picture/ost-bg.png") no-repeat 0 -40px;
+    position: absolute;
+    z-index: 1001;
+    left: 0;
+}
+header>div>:nth-child(2){
+    margin-left: 225px;
+}
+header>div>:nth-child(2)>p{
+    position: absolute;
+    z-index: 1000;
+    top:0;
+    left: -223px;
+    display: none;
+}
+header>div>:nth-child(2):hover>p{
+    display: block;
+}
+header>div>:nth-child(3){
+    margin-left: 290px;
+    width: 100px;
+    line-height: 40px;
+    font-size: 13px;
+    padding-left:20px;
+    background:url("picture/logo.png") no-repeat 0 10px;
+}
+header>div>:nth-child(3):hover{
+    color: red;
+}
+#paiHangBang{
+    /* border: 1px solid black;*/
+    line-height: 40px;
+    font-size: 13px;
+    width: 120px;
+    position:absolute;
+    right: 230px;
+}
+#paiHangBang>i{
+    display: inline-block;
+    /* border: 1px solid black;*/
+    width: 20px;
+    height: 40px;
+    font-style: normal;
+    position: absolute;
+    background:url("picture/ost-bg.png") no-repeat -145px -120px;
+}
+#paiHangBang:hover>span{
+    color: red;
+}
+#paiHangBang:hover>i{
+    color: red;
+    background:url("picture/ost-bg.png") no-repeat -165px -120px;
+}
+#headerTopRightNone{
+    border: 1px solid #ccc;
+    width:700px;
+    height: 500px;
+    position: absolute;
+    z-index: 100;
+    top:40px;
+    right:6px;
+    display: none;
+    background-color: white;
+}
+#paiHangBang:hover>div{
+    display: block;
+}
+.headerTopRightNoneContent{
+    border-left: 1px solid #ccc;
+    width: 215px;
+    /*height: 422px;*/
+    float: left;
+    margin-top: 20px;
+    margin-left: 5px;
+    padding-left: 8px;
+}
+.headerTopRightNoneContentHeard{
+    border-bottom: 1px solid #ccc;
+    width: 210px;
+    height:30px;
+}
+.headerTopRightNoneContentHeard>h2{
+    display: inline-block;
+    font-size: 15px;
+    color:#555;
+    margin-right:75px;
+}
+.headerTopRightNoneContentHeard>a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #707e91;
+}
+.headerTopRightNoneContentHeard>a:hover{
+    color: red;
+}
+.headerTopRightNoneContent>span{
+    display: block;
+    /* border: 1px solid red;*/
+    width: 210px;
+    /*height: 33px;*/
+    line-height: 33px;
+    font-size: 12px;
+    position: relative;
+    /* color: #707e91;*/
+}
+.headerTopRightNoneContentBody>li{
+    list-style: none;
+    /* border: 1px solid red;*/
+    width: 210px;
+    /*height: 33px;*/
+    line-height: 33px;
+    font-size: 12px;
+    position: relative;
+    /* color: #707e91;*/
+}
+.headerTopRightNoneContentBody>li>span{
+    display:inline-block;
+    border: 1px solid #ff4e00;
+    width: 15px;
+    height: 15px;
+    line-height:15px;
+    text-align: center;
+    font-size: 8px;
+    color: white;
+    position: absolute;
+    z-index: 10;
+    left: 5px;
+    top: 8px;
+    background-color: #ff4e00;
+}
+.headerTopRightNoneContentBody>li>p{
+    display:inline-block;
+    border: 1px solid grey;
+    width: 15px;
+    height: 15px;
+    line-height:15px;
+    text-align: center;
+    font-size: 8px;
+    color: grey;
+    position: absolute;
+    z-index: 10;
+    left: 5px;
+    top: 8px;
+}
+.titleW{
+    display: inline-block;
+    /* border: 1px solid black;*/
+    width: 160px;
+    height: 30px;
+    text-decoration: none;
+    color: #707e91;
+    font-size: 14px;
+    margin-left:30px;
+    /*display: none;*/
+}
+.headerTopRightNoneContentBody>li>div{
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 85px;
+    display: none;
+}
+.headerTopRightNoneContentBody>li>div>p{
+    width: 198px;
+    height: 28px;
+    margin-left: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.8;
+}
+.headerTopRightNoneContentBody>li>div>a{
+    display: inline-block;
+    text-decoration: none;
+    color: #aaa;
+    font-size: 14px;
+    position: absolute;
+    z-index: 11;
+    height: 28px;
+    line-height:28px;
+    width: 60px;
+    padding-left: 20px;
+}
+.headerTopRightNoneContentBody>li>div>a>i{
+    display: block;
+    width: 14px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+.jinRuGuanWangLogo{
+    background:url("picture/ost_rank_sp.png") no-repeat;
+}
+.xiaZaiYouXiLogo{
+    background:url("picture/ost_rank_sp.png") no-repeat -13px 0;
+}
+.jinRuGuanWang{
+    bottom: 0;
+    left: 10px;
+}
+.jinRuGuanWang:hover{
+    color: red;
+    text-decoration:underline;
+}
+.jinRuGuanWang:hover>i{
+    background:url("picture/ost_rank_sp.png") no-repeat 0 -17px;
+}
+.xiaZaiYouXi:hover{
+    color: red;
+    text-decoration:underline;
+}
+.xiaZaiYouXi:hover>i{
+    background:url("picture/ost_rank_sp.png") no-repeat -13px -17px;
+}
+.xiaZaiYouXi{
+    bottom: 0;
+    right:20px;
+}
+#main_head{
+    width: 1363px;
+    height: 100px;
+    background: url("picture/ui_bg_head.jpg") no-repeat;
+    position: relative;
+}
+#main_head>a{
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 185px;
+    height: 136px;
+    left:50px;
+    top:20px;
+}
+#main_head>ul{
+    width: 960px;
+    height: 98px;
+    list-style: none;
+    margin-left:290px;
+}
+#main_head>ul>li{
+    width: 180px;
+    height:98px;
+    line-height: 100px;
+    text-align: center;
+    font-size:19px;
+    float: left;
+    color: white;
+}
+#main_head>ul>li:hover{
+    background-color: #22316f;
+}
+/*.....................王者文化站....................................................*/
+#pageArea1{
+    /*border: 1px solid red;*/
+    width: 1360px;
+    height: 940px;
+    background: url("picture/in_banner.jpg") no-repeat;
+    position: relative;
+    background-size: 1360px 940px;
+}
+#pageArea1_picTitle{
+    width: 1200px;
+    height: 510px;
+    position: absolute;
+    left: 83px;
+    top: 340px;
+}
+#pageArea1_pic{
+    width: 890px;
+    height: 510px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+#pageArea1_picture{
+    width:4480px;
+    height: 510px;
+    position: absolute;
+    transition:left 0.3s linear;
+}
+#pageArea1_title{
+    width: 310px;
+    height: 510px;
+    position: absolute;
+    right:0;
+    top:0;
+    list-style: none;
+}
+#pageArea1_title>li{
+    border: 1px solid #25244b;
+    width:200px;
+    height: 100px;
+    padding-left:110px;
+    text-align: left;
+    background-color: #25244b;
+    cursor: pointer;
+}
+.brightNess{
+    filter:brightness(140%)
+}
+.brightAn{
+    filter:brightness(70%)
+}
+.bg1{
+    background: url("picture/a/icon-greatwall.png") no-repeat 10px 10px;
+}
+.bg2{
+    background: url("picture/a/icon-music.png") no-repeat 10px 10px;
+}
+.bg3{
+    background: url("picture/a/icon-poetry.png") no-repeat 10px 10px;
+}
+.bg4{
+    background: url("picture/a/icon-history.png") no-repeat 10px 10px;
+}
+#pageArea1_title>li>:nth-child(1){
+    font-size: 22px;
+    color: white;
+    line-height:70px;
+}
+#pageArea1_title>li>:nth-child(2){
+    font-size: 13px;
+    color: white;
+    line-height:0;
+
+}
+/*..................王者历史课.................................................*/
+#pageArea2{
+    width: 1360px;
+    height: 780px;
+    background:url("picture/in_history.jpg")  80px 0;
+    position: relative;
+}
+#pageArea2_content{
+    position: absolute;
+    width: 1200px;
+    height: 460px;
+    top:235px;
+    left: 70px;
+    background-color: #364159;
+}
+#pageArea2_course{
+    position: absolute;
+    width: 510px;
+    height: 460px;
+    top:0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#pageArea2_course>ul{
+    width: 500px;
+    height: 880px;
+    list-style: none;
+}
+#pageArea2_course>ul>li{
+    width: 220px;
+    height: 202px;
+    float: left;
+    margin-left:15px;
+    margin-top: 15px;
+    position: relative;
+    cursor: pointer;
+}
+#pageArea2_course>ul>li>div{
+    width: 220px;
+    height: 63px;
+    background-color:rgba(2, 10, 33,1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#pageArea2_course>ul>li>div>p{
+    /*    border: 1px solid red;*/
+    width: 220px;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    line-height:30px;
+    text-align: center;
+    /* transition: all 1s;*/
+}
+#pageArea2_course>ul>li>div>span{
+    display: block;
+    /*  border: 1px solid red;*/
+    width: 220px;
+    height: 25px;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#pageArea2_course>ul>li>div>span>i{
+    display: block;
+    font-style: normal;
+    /*   border: 1px solid blue;*/
+    width: 50px;
+    height:25px;
+    line-height: 25px;
+    font-size: 12px;
+    float: right;
+    padding-left: 20px;
+}
+#pageArea2_course>ul>li>div>span>:nth-child(2){
+    background:url("picture/history/shiz.png") no-repeat 0 2px;
+    background-size: 20px 20px;
+}
+#pageArea2_course>ul>li>div>span>:nth-child(1){
+    background:url("picture/history/icon.png") no-repeat 0 5px;
+    background-size: 15px 15px;
+}
+#pageArea2_course>ul>li>p{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: black;
+    width: 220px;
+    height: 202px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+#pageArea2_course>ul>li>p>img{
+    position: absolute;
+    left: 80px;
+    top: 75px;
+}
+#pageArea2_course>ul>li:hover>p{
+    opacity: 0.7;
+}
+/*.....................荣耀诗会.................................................*/
+#pageArea3{
+    width: 1360px;
+    height: 828px;
+    background: url("picture/gloryPoetry/in_poetry.jpg") 80px 0;
+    position: relative;
+}
+#kong4{
+    width: 1360px;
+    height: 235px;
+}
+#pageArea3Con{
+    width: 1355px;
+    height: 490px;
+    position: relative;
+}
+#pageArea3Pic1{
+    width: 1190px;
+    height: 435px;
+    list-style: none;
+    margin-left: 75px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: opacity 0.5s ;
+}
+#pageArea3Pic2{
+    width: 1190px;
+    height: 435px;
+    list-style: none;
+    margin-left: 75px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ;
+    /* display: none;*/
+}
+#pageArea3Pic1>li{
+    width: 283px;
+    height: 205px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#pageArea3CliL{
+    display: block;
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 200px;
+    background:url("picture/gloryPoetry/left.png") navajowhite 4px 0;
+}
+#pageArea3CliR{
+    display: block;
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 200px;
+    background:url("picture/gloryPoetry/right.png") navajowhite -3px 0;
+}
+#pageArea3FocuOne{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    left: 300px;
+    bottom: 0;
+}
+#pageArea3FocuTwo{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    left: 350px;
+    bottom: 0;
+}
+.pageArea3Focubg1{
+    background: url("picture/gloryPoetry/sc_img_default.png") no-repeat -131px -364px;
+}
+.pageArea3Focubg2{
+    background: url("picture/gloryPoetry/sc_img_default.png") no-repeat -169px -364px;
+}
+
+
+/*........历史上的他...............................................................*/
+#historyHe{
+    width: 1360px;
+    height: 892px;
+    background: url("picture/historyHe/in_hero.jpg") 80px 0;
+}
+#kong{
+    width: 1360px;
+    height: 220px;
+}
+#historyHe_content{
+    width: 1300px;
+    height: 600px;
+    position: relative;
+}
+#historyHe_contentLeft{
+    width: 375px;
+    height: 585px;
+    float: left;
+    margin-left: 75px;
+    position: relative;
+}
+#historyHe_contentLpic{
+  /*  border: 1px solid yellow;*/
+    position: absolute;
+    top: 0;
+    left: 1px;
+    width: 375px;
+    height: 250px;
+}
+/*.............................放大镜.....................................*/
+#picBigBox{
+    border: 2px solid #ccc;
+    position: absolute;
+    width: 380px;
+    height:380px;
+    left:400px;
+    top: 0;
+    z-index: 500;
+    overflow: hidden;
+    display: none;
+}
+#cover{
+    /*  display: block;*/
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 190px;
+    height: 190px;
+    display: none;
+    background-color:yellowgreen;
+    opacity: 0.4;
+}
+#pictureBig{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*.............................放大镜.....................................*/
+#historyHe_contentLwor{
+    width: 375px;
+    height:340px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("picture/historyHe/sc_img_default.png") 1px 0;
+}
+#historyHeLeftWords{
+    width: 335px;
+    height: 275px;
+    line-height: 30px;
+    font-size: 18px;
+    color: white;
+    margin-left: 30px;
+    margin-top:20px;
+}
+#historyHeLeftWords>h2{
+    width: 335px;
+    height: 50px;
+}
+#historyHeLeftWords>p{
+    width: 335px;
+    height: 225px;
+}
+.historyHe_contentRightPic{
+    width:838px;
+    height: 510px;
+    float: left;
+    margin-top: 63px;
+    overflow-x: hidden;
+    overflow-y:scroll;
+    background: url("picture/historyHe/in_hero_bg.jpg") repeat-y;
+    position: relative;
+    display: none;
+}
+#xuanxiang{
+    position: absolute;
+    z-index: 10;
+    top:5px;
+    right:9px;
+    width: 840px;
+    height: 60px;
+    overflow: hidden;
+}
+#xuanxiang>ul{
+    list-style: none;
+    /* border: 1px solid red;*/
+    width: 2000px;
+    height: 60px;
+    background-color: #333357;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 0.5s linear;
+}
+#xuanxiang>ul>li{
+    /* border: 1px solid yellow;*/
+    width:140px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    float: left;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+.historyHe_contentRightPic>ul{
+    list-style: none;
+}
+.historyHe_contentRightPic>ul>li{
+    /*border: 1px solid red;*/
+    width: 155px;
+    height: 160px;
+    float: left;
+    margin-left:5px;
+    margin-top: 5px;
+    filter: brightness(45%);
+    cursor: pointer;
+}
+#historyDetailWords{
+    position: fixed;
+    z-index: 1002;
+    left: 0;
+    top: 0;
+    width: 1360px;
+    height: 760px;
+    display: none;
+}
+#historyDetailWords>span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 1360px;
+    height: 760px;
+    background-color: black;
+    opacity: 0.6;
+}
+#historyDetailWordDiv{
+    position: absolute;
+    left: 180px;
+    top:50px;
+    width: 1000px;
+    height: 510px;
+    background-color:lightcyan;
+}
+#historyDetailWordDiv>h2{
+    width: 1000px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: rgb(37, 45, 53);
+    font-size: 40px;
+    color: #c1d5ff;
+}
+#historyDetailWordDiv>div{
+    /* border: 1px solid black;*/
+    width:930px;
+    height: 340px;
+    bottom: 30px;
+    margin-top:40px;
+    margin-left:40px;
+    font-size: 20px;
+    color: #222427;
+    line-height: 44px;
+}
+#hDetailClose{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("picture/historyHe/big/xx.png") no-repeat;
+    position: absolute;
+    right:20px;
+    top: 20px;
+    cursor: pointer;
+}
+/*.........................王者音乐听.............................................*/
+#kingMusic{
+    width: 1360px;
+    height:1224px;
+    background: url("picture/kingMusic/in_listen.jpg") 80px 0;
+}
+#kong2{
+    width: 1360px;
+    height: 335px;
+}
+#kingMusic>ul{
+    width: 1300px;
+    height: 395px;
+    list-style: none;
+}
+#kingMusic>ul>li{
+    width: 570px;
+    height: 395px;
+    float: left;
+    margin-left: 73px;
+}
+#kingMusic>ul>:nth-child(1){
+    background: url("picture/kingMusic/1.png") no-repeat;
+}
+#kingMusic>ul>:nth-child(2){
+    background: url("picture/kingMusic/2.png") no-repeat;
+}
+#kingMusic>ul>li>a{
+    display: block;
+    width: 570px;
+    height: 395px;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+#kingMusic>ul>li>a>img{
+    margin-left: 240px;
+    margin-top: 160px;
+}
+#kong3{
+    width: 1360px;
+    height: 177px;
+}
+#kingMusicLunBo{
+    /* border: 1px solid black;*/
+    width: 1350px;
+    height: 225px;
+    position: relative;
+}
+#kingMusicLunBo>div{
+    /* border: 1px solid yellow;*/
+    width: 1184px;
+    height: 225px;
+    margin-left: 82px;
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+}
+#kingMusicLunBoPic{
+    /*   border: 1px solid red;*/
+    width: 2584px;
+    height: 225px;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#kingMusicLunBo li{
+    /* border: 1px solid blue;*/
+    width: 218px;
+    height: 218px;
+    float: left;
+    margin-left: 20px;
+}
+#kingMusicLeft{
+    position: absolute;
+    width: 30px;
+    height: 225px;
+    left: 40px;
+    top:0;
+    cursor: pointer;
+    background:url("picture/kingMusic/sc_img_default.png") -382px -105px;
+}
+#kingMusicRight{
+    position: absolute;
+    width: 30px;
+    height: 225px;
+    right: 40px;
+    top:0;
+    cursor: pointer;
+    background:url("picture/kingMusic/sc_img_default.png") -420px -105px;
+}
+footer{
+    width: 1360px;
+    height: 352px;
+    background-color: white;
+}
+footer>img{
+    margin-left: 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,1536 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*..............吸顶式导航........................................................*/
+#gripNavigate{
+    position:relative;
+    z-index: 200;              /*整个吸顶式导航浏览器定位， z-index: 200; */
+    border: 1px solid ghostwhite;
+    width: 1360px;
+    height: 55px;
+    background-color: white;
+}
+#gripNavigate>:nth-child(1){
+    position: relative;
+    left: 80px;
+}
+#gripNavigate>:nth-child(4){
+    /*  border: 1px solid black;*/
+    font-size: 11px;
+    text-decoration: none;
+    color: gray;
+    position: absolute;
+    right: 200px;
+    top: 20px;
+}
+#gripNavigate>input{
+    border: 1px solid blue;
+    width: 205px;
+    height: 30px;
+    padding-left: 5px;
+    position: absolute;
+    left: 670px;
+    top: 15px;
+    background-image:url("gripNaviatePicture/icons.png");
+    background-repeat: no-repeat;
+    background-position: 213px -95px;
+    padding-right: 30px;
+}
+#gripNavigate>ul{
+    /*  border: 1px solid yellow;*/
+    list-style: none;
+    width: 420px;
+    position: absolute;
+    left: 220px;
+    top: 0;
+}
+#gripNavigate>ul>li{
+    /*   border: 1px solid black;*/
+    list-style: none;
+    float: left;
+    width: 80px;
+    height: 55px;
+    line-height:53px;
+    text-align: center;
+    font-size: 16px;
+}
+#gripNavigate>ul>li:hover{
+    background-color: #02baf2;
+    color: white;
+}
+#gripNavigateRight{
+    /* border: 1px solid gainsboro;*/
+    width: 30px;
+    height: 54px;
+    position: absolute;
+    right: 120px;
+    top: 0;
+    background-image: url("gripNaviatePicture/more_01.png");
+    background-repeat: no-repeat;
+    background-position: 9px 22px;
+}
+#gripNavigateRightNone{
+    border: 1px solid ghostwhite;
+    width: 1200px;
+    height: 230px;
+    position: absolute;
+    right: -1px;
+    top: 54px;
+    display: none;
+    background-color: white;
+}
+#gripNavigateRight:hover{
+    border: 1px solid gainsboro;
+}
+#gripNavigateRight:hover>div{
+    display: block;
+}
+#gripNavigateRightNone>ul{
+    /*border: 1px solid black;*/
+    width: 140px;
+    height: 190px;
+    float: left;
+    list-style: none;
+    margin-top: 25px;
+    font-family: "Helvetica Neue",
+    Helvetica, "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    微软雅黑,
+    Arial, sans-serif;
+}
+#gripNavigateRightNone>ul>li{
+    /* border: 1px solid blue;*/
+    width: 100px;
+    height: 30px;
+    line-height:30px;
+    text-align: center;
+    font-size: 11px;
+
+}
+#gripNavigateRightNone>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+#gripNavigateRightNone h6{
+    font-size: 14px;
+}
+#findCourse>div{
+    /*    border: 1px solid red;*/
+    width: 218px;
+    height: 411px;
+    position: absolute;
+    z-index: 1;
+    left: -60px;
+    top: 55px;
+    background-color: #02baf2 ;
+    display: none;
+}
+#findCourse:hover>div{
+    display: block;
+}
+#findCourse>div>div{
+    /*  border: 1px solid black;*/
+    border-top: 1px dashed white;
+    width: 212px;
+    height: 66px;
+    padding-left: 6px;
+    margin-top: 0;
+    /* margin-left: 12px;*/
+}
+#findCourse>div>div:hover{
+    background-color: white;
+}
+#findCourse>div>div:hover>div{
+    display: block;
+}
+#findCourse>div>div:hover>span>a{
+    color: black;
+}
+#findCourse>div>div>span{
+    display: block;
+    /*  border: 1px solid black;*/
+    width: 208px;
+    height: 25px;
+    text-align: left;
+    line-height: 30px;
+    /* margin-left: 3px;*/
+    font-size: 13px;
+}
+#findCourse>div>div>span>a{
+    text-decoration: none;
+    color: white;
+}
+.threeDiv{
+    border-top: 2px solid  #02baf2;
+    border-bottom: 2px solid  #02baf2;
+    border-right:2px solid  #02baf2 ;
+    width: 643px;
+    height: 406px;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+    left: 218px;
+    top: 0;
+    color: black;
+    display: none;
+}
+.threeDiv>h6{
+    /* border: 1px solid black;*/
+    width: 300px;
+    height: 35px;
+    line-height: 40px;
+    text-align: left;
+    margin-left: 25px;
+}
+.threeDiv>p{
+    /* border: 1px solid black;*/
+    width: 350px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    margin-left: 25px;
+}
+.threeDiv>p>a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+.threeDiv>span{
+    display: block;
+    /* border: 1px solid black;*/
+    width: 350px;
+    height: 155px;
+    margin-left: 25px;
+}
+.threeDiv>span>a{
+    display: block;
+    /*  border: 1px solid black;*/
+    width: 350px;
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+.threeDiv>img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#BodyTopPicture{
+    border: 1px solid black;
+    width: 1360px;
+    height: 721px;
+    background-image: url("assistantPagePicture/abg_01.png");
+    background-repeat: no-repeat;
+    background-position: -280px 0;
+    position: relative;
+}
+#BodyTopPicture>:nth-child(1){
+    display: block;
+    width: 220px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius:5px;
+    text-decoration: none;
+    color: white;
+    background-color: #0dc7ba;
+    font-size: 25px;
+    position: absolute;
+    left: 430px;
+    bottom: 150px;
+}
+#BodyTopPicture>:nth-child(2){
+    display: block;
+    border: 1px solid white;
+    width: 220px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius:5px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    left: 720px;
+    bottom: 150px;
+}
+#bigGift{
+/*    border: 1px solid red;*/
+    width: 1360px;
+    height: 541px;
+    margin-top: 90px;
+    position: relative;
+}
+#bigGift>span{
+    display: block;
+    width: 1100px;
+    height: 138px;
+    margin-left: 90px;
+}
+#bigGift>ul{
+    width: 1110px;
+    height: 350px;
+    background-image: url("assistantPagePicture/a_02.png");
+    background-repeat: no-repeat;
+    margin-left: 125px;
+    list-style: none;
+}
+#bigGift>ul>li{
+    width: 275px;
+    height: 350px;
+    float: left;
+    position: relative;
+}
+#bigGift>ul>li>h3{
+  /*  border: 1px solid black;*/
+    width: 225px;
+    height: 31px;
+    margin-top: 158px;
+    margin-left:40px;
+}
+#bigGift>ul>li>p{
+    width: 100px;
+    height: 30px;
+    margin-left:110px;
+    font-size: 13px;
+}
+#bigGift>ul>li>p>em{
+    font-style: normal;
+    font-size: 19px;
+}
+#bigGift>ul>li>a{
+    display: block;
+    width: 70px;
+    height:20px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #09b8ac;
+    margin-left:125px;
+    margin-top: 102px;
+}
+/*.........大数据时代部分................................................*/
+#dataPeriod{
+    width: 1360px;
+    height: 600px;
+    background-image: url("assistantPagePicture/abg_02.png");
+    background-repeat: no-repeat;
+}
+#dataPeriod>h2{
+    color: white;
+    font-size: 40px;
+    width: 1300px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    padding-top: 50px;
+}
+#dataPeriod>p{
+    width: 1300px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+#dataPeriod>p>i{
+    display: inline-block;
+   width: 180px;
+    height:1px;
+    border-top:1px solid white;
+   padding-bottom: 5px;
+}
+#dataPeriod>ul{
+   /* border: 1px solid red;*/
+    width: 1230px;
+    height: 330px;
+    margin-top: 80px;
+    margin-left: 120px;
+    list-style: none;
+}
+.on{
+    border: 1px solid #acc1c7;
+  /*  width: 168px;*/
+  /*  height: 258px;*/
+    float: left;
+    position: relative;
+    background-image: url("assistantPagePicture/point.png");
+}
+.titlW{
+    display: block;
+    border: 1px solid white;
+    width: 126px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin:  104px  20px ;
+}
+.dataPeriodDivNone{
+    width: 288px;
+    height: 328px;
+    background-image: url("assistantPagePicture/a_03.png");
+    background-repeat: no-repeat;
+    color: white;
+    display: none;
+}
+.dataPeriodDivNone>span{
+  /*  border: 1px solid white;*/
+    display: block;
+    width: 170px;
+    height: 50px;
+    font-size: 40px;
+    color: #f0ff00;
+    position: absolute;
+    left: 60px;
+    top: 50px;
+}
+.dataPeriodDivNone>p{
+    width: 198px;
+    height: 90px;
+    font-size: 18px;
+    color:white;
+    position: absolute;
+    left: 30px;
+    bottom: 75px;
+}
+/*.............大数据工程师的简易解释........................................*/
+#dataSimpleExplain{
+    width: 1360px;
+    height: 650px;
+}
+#dataSimpleExplain>h2{
+    width: 1360px;
+    height: 130px;
+    line-height:130px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 65px;
+}
+#dataSimpleExplain>div{
+  /*  border: 1px solid black;*/
+    width: 1360px;
+    height:428px;
+    position: relative;
+}
+#dataSimpleExplain img{
+    position: absolute;
+    left: 130px;
+    top: 70px;
+}
+#dataSimpleExplain p{
+    width: 660px;
+    height: 200px;
+    line-height: 30px;
+    font-size: 16px;
+    position: absolute;
+    right: 140px;
+    top: 120px;
+}
+#dataSimpleExplain a{
+    display: block;
+    width: 660px;
+    height: 35px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: right;
+    color: #09b8ac;
+    position: absolute;
+    right: 143px;
+    top: 300px;
+}
+#dataSimpleExplain i{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+}
+
+/*............大数据工程师培训的误区.........................................*/
+#dataWrongRegion{
+  /*  border: 1px solid black;*/
+    width: 1360px;
+    height: 600px;
+}
+#dataWrongRegion>h2{
+   /* border: 1px solid black;*/
+    width: 1360px;
+    height: 102px;
+    line-height: 102px;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+}
+.wrongRegion{
+    display:inline-block;
+    width: 134px;
+    height: 102px;
+    background-image: url("assistantPagePicture/a_07.png");
+    font-style: normal;
+    color: #0dc8bb;
+}
+#dataWrongRegion>div{
+/*    border: 1px solid black;*/
+    width: 1200px;
+    height: 483px;
+    margin: 10px 90px;
+}
+#dataWrongRegion>div>div{
+  border-left: 1px solid #0dc8bb;
+    border-bottom: 1px solid #0dc8bb;
+    width: 240px;
+    height: 270px;
+    padding: 25px 25px;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    float: left;
+    position: relative;
+}
+#dataWrongRegion>div>div>img{
+    position: absolute;
+    left: -40px;
+    top:-1px;
+}
+#dataWrongRegion>div>div>h2{
+   /* border: 1px solid black;*/
+    width: 260px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 24px;
+    text-align: center;
+}
+#dataWrongRegion>div>div>p{
+ /*   border: 1px solid black;*/
+    width: 250px;
+    height: 120px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-top: 30px;
+
+}
+#dataWrongRegion>div>div>a{
+    text-decoration: none;
+    color: #0dc8bb;
+    font-size: 18px;
+    display: block;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+}
+/*..........51CTO国际标准课程.............................*/
+#standardCourse{
+ /*   border: 1px solid black;*/
+    width: 1360px;
+    height: 595px;
+}
+#standardCourse>h2{
+  /*  border: 1px solid black;*/
+    width: 1360px;
+    height: 100px;
+    line-height:100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+#standardCourse>div{
+/*    border: 1px solid red;*/
+    width: 1360px;
+    height: 395px;
+    margin-top: 65px;
+    position: relative;
+}
+#collegeProduce{
+    width: 1360px;
+    height: 380px;
+    background-color: #eee;
+}
+#CTOcollege{
+  /*  border: 1px solid black;*/
+    width: 250px;
+    height: 252px;
+    margin-left: 150px;
+    padding-top: 80px;
+}
+#moEnCollege{
+    width: 250px;
+    height: 252px;
+    position: absolute;
+    right: 190px;
+    top: 80px;
+}
+#collegeProduce h2{
+ /*   border: 1px solid black;*/
+    width:247px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+#collegeProduce h2 i{
+    display: inline-block;
+ /*   border: 1px solid black;*/
+    width: 49px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    font-style: normal;
+    color: white;
+}
+#collegeProduce p{
+  /*  border: 1px solid black;*/
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+#collegeProduce p i{
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    background-color: black;
+    vertical-align:middle;
+    margin-left: 14px;
+    margin-right: 5px;
+}
+#collegeProduce a{
+    display: inline-block;
+ /*   border: 1px solid black;*/
+    width: 180px;
+    height: 42px;
+    color: #09b8ac;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 40px;
+    text-decoration: none;
+}
+#tonightCourse{
+ /*   border: 1px solid black;*/
+    width: 462px;
+    height: 422px;
+    background-image: url("assistantPagePicture/abg_09.png");
+    position: absolute;
+    left: 440px;
+    top: -22px;
+}
+#tonightCourse h2 {
+    width: 415px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    margin-left: 20px;
+    color: white;
+}
+#tonightCourse h2 i{
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background: white;
+    vertical-align:middle;
+    margin: 0 10px;
+}
+#tonightCourse>p{
+  /*  border: 1px solid black;*/
+    width: 415px;
+    height: 41px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+}
+#tonightCourse>p em{
+    font-style: normal;
+    font-size: 24px;
+    color: #f0ff00;
+}
+#tonightCourse>div{
+/*    border: 1px solid black;*/
+    width:370px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-bottom: 2px solid white;
+}
+#tonightCourse>div>i{
+/*    border: 1px solid black;*/
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+#tonightCourse>div>input{
+/*    border: 1px solid black;*/
+    display:inline-block;
+    width: 270px;
+    height: 40px;
+    position: relative;
+    top: -15px;
+    background: #09b8ac;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+#tonightCourse>a{
+    display: block;
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background: white;
+    text-decoration: none;
+    color: #09b8ac;
+    font-size: 24px;
+    margin-left:110px;
+    margin-top: 30px;
+}
+/*..........权威课程.......................................*/
+#authorityCourse{
+    width: 1360px;
+    height: 1360px;
+    background-image: url("assistantPagePicture/abg_03.png");
+    position: relative;
+}
+#authorityCourse>div>h2{
+  /*  border: 1px solid black;*/
+    width: 1360px;
+    height: 65px;
+    line-height:65px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding-top: 30px;
+}
+#authorityCourse>div>p{
+   /* border: 1px solid black;*/
+    width: 1360px;
+    height: 30px;
+    line-height:30px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+#authorityCourse>div>p>i{
+    display: inline-block;
+    width: 180px;
+    height: 1px;
+    background: white;
+    vertical-align: middle;
+}
+#authorityCourse>ul{
+/*    border: 1px solid black;*/
+    width: 260px;
+    height: 1127px;
+    float: left;
+  /* margin-top: 10px;*/
+    margin-left: 30px;
+    list-style: none;
+    margin-top: 25px;
+}
+#authorityCourse>ul>li{
+   /* border: 1px solid black;*/
+    width: 260px;
+    height: 270px;
+    margin-top:5px;
+    position:relative;
+}
+#authorityCourse>ul>li>:nth-child(1){
+    width:100%;
+    height:100%;
+  /*  display: none;*/
+}
+#authorityCourse>ul>li>:nth-child(1)>i{
+    display: block;
+    width: 60px;
+    height: 59px;
+    line-height: 40px;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image:url("assistantPagePicture/a_15.png");
+    background-repeat: no-repeat;
+}
+#authorityCourse>ul>li>:nth-child(1)>p{
+    width: 260px;
+    height: 70px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: white;
+    background: rgb(14,51,70);
+    position: absolute;
+    bottom:-5px;
+}
+#authorityCourse>ul>li>:nth-child(2){
+    background: #09b8ac;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    display: none;
+}
+#authorityCourse>ul>li>:nth-child(2)>div{
+    border: 1px solid white;
+    width: 240px;
+    height: 255px;
+    background: #09b8ac;
+    margin-left:10px;
+    margin-top:8px;
+}
+#authorityCourse>ul>li>:nth-child(2) p{
+    width: 233px;
+    font-size:12px;
+    color: white;
+    margin-left: 2px;
+  /*  margin-top: 2px;*/
+}
+#authorityCourse>span{
+    display: block;
+  /*  border: 1px solid black;*/
+    width: 1360px;
+    height: 100px;
+    line-height:100px;
+    position: absolute;
+    bottom: 0;
+}
+#authorityCourse>span>a{
+    display: inline-block;
+   width: 238px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+}
+/*..............权威实战项目..............................................*/
+#authorityProject{
+/*    border: 1px solid black;*/
+    width: 1360px;
+    height: 1590px;
+}
+#authorityProject>:nth-child(1){
+   /* border: 1px solid red;*/
+    width: 1360px;
+    height: 100px;
+    padding-top: 90px;
+}
+#authorityProject>:nth-child(1)>h2{
+    width: 1360px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+#authorityProject>:nth-child(1)>p{
+    width: 1360px;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+#authorityProject>:nth-child(1)>p>i{
+    display:inline-block;
+    width: 180px;
+    height: 1px;
+    background: black;
+    vertical-align: middle;
+}
+#projectLeft{
+   /* border: 1px solid red;*/
+    width: 500px;
+    height: 1220px;
+    float: left;
+    margin-left: 110px;
+    margin-top: 100px;
+}
+#projectLeft>div{
+/*    border: 1px solid black;*/
+    width: 500px;
+    height: 300px;
+    margin-bottom: 100px;
+}
+#projectLeft>div>h2{
+  /*  border: 1px solid black ;*/
+    width: 500px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    color: #f4655f;
+}
+#projectLeft>div>p{
+    width: 500px;
+    height: 192px;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+#projectLeft>div>a{
+   /* border: 1px solid black ;*/
+    display: block;
+    width: 500px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    color: #f4655f;
+    text-decoration: none;
+}
+#projectCenter{
+    width: 2px;
+    height: 1220px;
+    float: left;
+    margin-left: 70px;
+    margin-right: 70px;
+    background: #ddd;
+    margin-top: 100px;
+    position: relative;
+}
+#projectCenter>i{
+    display: block;
+    width: 30px;
+    height: 25px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+#projectRight{
+ /*   border: 1px solid blue;*/
+    width: 500px;
+    height: 1220px;
+    float: left;
+    margin-top: 100px;
+}
+#projectRight>:nth-child(1){
+ /*   border: 1px solid red;*/
+    width: 500px;
+    height: 400px;
+}
+#projectRight>:nth-child(1)>h2{
+   /* border: 1px solid black ;*/
+    width: 500px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: right;
+    color: #08bca7;
+    margin-top: 140px;
+}
+#projectRight>:nth-child(1)>p{
+   /* border: 1px solid blue;*/
+    width: 500px;
+    height: 110px;
+    font-size: 14px;
+    color: gray;
+    line-height: 24px;
+    text-align: right;
+}
+#projectRight>:nth-child(1)>a{
+  /*  border: 1px solid black ;*/
+    display: block;
+    width: 500px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: right;
+    color: #08bca7;
+    text-decoration: none;
+}
+#projectRight>:nth-child(3)>h2{
+    width: 500px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: right;
+    color: #3aa3cd;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+#projectRight>:nth-child(3)>p{
+   /* border: 1px solid blue;*/
+    width: 500px;
+    height: 180px;
+    font-size: 14px;
+    color: gray;
+    line-height: 24px;
+    text-align: right;
+}
+#projectRight>:nth-child(3)>a{
+    display: block;
+    width: 500px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: right;
+    color: #3aa3cd;
+    text-decoration: none;
+}
+/*.........我们为你提供最权威的名师授课...........................................*/
+#famousTeacherLessons{
+    width: 1360px;
+    height: 732px;
+    background-image: url("assistantPagePicture/abg_04.png");
+}
+#famousTeacherLessons>:nth-child(1)>h2{
+    width: 1360px;
+    height: 80px;
+    font-size: 40px;
+    color: white;
+    line-height:80px;
+    text-align: center;
+    padding-top: 60px;
+}
+#famousTeacherLessons>:nth-child(1)>p{
+    width: 1360px;
+    height: 35px;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+}
+#famousTeacherLessons>:nth-child(1)>p>i{
+    display: inline-block;
+    width: 180px;
+    height: 1px;
+    background: white;
+    vertical-align: middle;
+}
+.famousTeacher{
+    border: 1px solid white;
+    width: 460px;
+    height: 286px;
+    position: relative;
+    background-image: url("assistantPagePicture/point.png");
+    float: left;
+    margin-top: 130px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.famousTeacher>:nth-child(2){
+    display:inline-block;
+/*    border: 1px solid white;*/
+    position: absolute;
+    top: 10px;
+    width: 310px;
+    height:25px;
+    text-align: left;
+    line-height: 24px;
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.famousTeacher>:nth-child(3){
+    display:inline-block;
+/*    border: 1px solid white;*/
+    position: absolute;
+    top: 35px;
+    width: 310px;
+    height:24px;
+    text-align: left;
+    line-height: 24px;
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.famousTeacher>:nth-child(4){
+    display:inline-block;
+  /*  border: 1px solid white;*/
+    position: absolute;
+    top: 60px;
+    width:310px;
+    height: auto;
+    text-align:left;
+    font-size: 14px;
+    line-height:24px;
+    color: white;
+    margin-left: 20px;
+}
+.famousTeacher>:nth-child(5){
+    display:inline-block;
+   /* border: 1px solid white;*/
+    position: absolute;
+    top:160px;
+    right: 0;
+    width:445px;
+    text-align:left;
+    font-size: 14px;
+    line-height:24px;
+    color: white;
+    margin-left: 20px;
+}
+.famousTeacher>a{
+    display: block;
+    text-decoration: none;
+    width: 130px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #09b8ac;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 8px;
+}
+/*.....我们为你提供最高效的助学服务......................................*/
+#helpStudyServe{
+    width: 1360px;
+    height: 820px;
+    position: relative;
+}
+.titleWords1{
+    width: 1360px;
+    height: 80px;
+    font-size: 40px;
+    color: black;
+    line-height:80px;
+    text-align: center;
+    padding-top: 60px;
+}
+.titleWords2{
+    width: 1360px;
+    height: 35px;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    color: black;
+}
+.titleWords2>i{
+    display: inline-block;
+    width: 180px;
+    height: 1px;
+    background:black;
+    vertical-align: middle;
+}
+.serve{
+    width: 350px;
+    height: 480px;
+    float: left;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.serve>h2{
+    width: 300px;
+    height: 60px;
+    line-height:60px;
+    font-size: 30px;
+    padding-left: 50px;
+}
+.serveTitle{
+    font-style: normal;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 30px 30px;
+    position: absolute;
+    top: -2px;
+    left: -30px;
+    background: white;
+}
+.serveWords{
+    width: 300px;
+    height: 100px;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 20px;
+    margin-top: 35px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.serveIcon{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    position: absolute;
+    left: -8px;
+    top: 3px;
+    background: white;
+}
+.serve>a{
+    display: block;
+    font-size: 16px;
+    padding-left: 20px;
+    text-decoration: none;
+    position: relative;
+}
+#helpStudyServe>p{
+    clear: left;
+    width: 1106px;
+    height: 51px;
+    background-image:url("assistantPagePicture/a_22.png");
+    position: absolute;
+    top: 660px;
+    left: 80px;
+}
+/*.......我们为你提供最专业的职场规划......................................*/
+#careerPlaning{
+    width: 1360px;
+    height: 860px;
+    background-image: url("assistantPagePicture/abg_05.png");
+    position: relative;
+}
+#careerPlaningContent{
+ /*   border: 1px solid black;*/
+    width: 1220px;
+    height: 555px;
+    margin-left: 110px;
+    margin-top: 40px;
+}
+.careerPlaningSide{
+    border-left: 3px solid #0dc8bb;
+    width: 60px;
+    height: 455px;
+    float: left;
+    margin-top:30px;
+}
+.careerPlaningSide>span{
+    display: block;
+    width: 35px;
+    height:230px;
+    line-height:20px;
+    text-align: center;
+    background-color: #0dc8bb;
+    margin-top:98px;
+    font-size: 18px;
+    color:black;
+    padding-top: 20Px;
+}
+.careerPlaningMain{
+    width:270px;
+    height: 540px;
+    float: left;
+    margin: 0 20px;
+}
+.careerPlaningMain>h2{
+    font-size: 13px;
+    color: white;
+    width: 265px;
+    height: 25px;
+    line-height:25px;
+    text-align: left;
+}
+.careerPlaningMain>p{
+    font-size: 13px;
+    color: white;
+    width: 240px;
+    line-height: 22px;
+    text-align: left;
+}
+.tid{
+    height: 40px;
+    margin-left:30px;
+}
+#careerPlaning>a{
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    width: 260px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    background-color: #09b8ac;
+    border-radius: 5px;
+    margin-left: 550px;
+    position: absolute;
+    bottom: 80px;
+}
+/*..........大数据工程师就业合作企业............................................*/
+#operationEnterprise{
+    width: 1360px;
+    height: 540px;
+}
+#operationEnterprise>span{
+    display: block;
+    width: 1103px;
+    height: 174px;
+    background-image: url("assistantPagePicture/a_23.png");
+    margin-top: 80px;
+    margin-left: 120px;
+}
+#operationEnterprise>a{
+    display: block;
+    width: 1360px;
+    height: 62px;
+    line-height:62px;
+    text-align: center;
+    font-size: 24px;
+    color: #09b8ac;
+    margin-top: 30px;
+    text-decoration: none;
+}
+/*.........还有三大行业认可度最高的认证证书..........................................*/
+#certificate{
+    width: 1360px;
+    height: 480px;
+    background-image: url("assistantPagePicture/abg_06.png");
+}
+#certificate li{
+    list-style: none;
+    float: left;
+    margin: 30px 30px;
+}
+#certificate li p{
+/*    border: 1px solid black;*/
+    width: 298px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+/*.......张小龙推荐和榜首........................................................*/
+#recommendAndTop{
+    width: 1360px;
+    height: 640px;
+}
+.recommendAndTopContent{
+/*    border: 1px solid black;*/
+    width: 560px;
+    height: 600px;
+    float: left;
+    margin-top: 10px;
+}
+.recommendAndTopContent p{
+    width: 560px;
+    height:120px;
+    line-height:120px;
+    font-size: 30px;
+    text-align: center;
+}
+.recommendAndTopContent em{
+    font-style: normal;
+    color: #09b8ac;
+}
+/*.......点击咨询报名学习...................................................*/
+#consultStudy{
+    width: 1360px;
+    height: 600px;
+    background: url("assistantPagePicture/abg_07.png") no-repeat;
+   background-position: -300px 0;
+    position: relative;
+}
+#consultStudy>p{
+   /* border: 1px solid white;*/
+    width: 1200px;
+    height: 90px;
+    line-height:90px;
+    font-size: 34px;
+    color: white;
+    margin-left: 130px;
+}
+#consultStudy>p em{
+    font-style: normal;
+}
+#consultStudy>p i{
+    display: inline-block;
+    width: 174px;
+    height: 124px;
+   vertical-align: middle;
+    text-align: center;
+    font-style: normal;
+    background:url("assistantPagePicture/a_29.png") no-repeat;
+    font-size: 40px;
+    color: #09b8ac
+}
+#consultStudy>a{
+    display: block;
+    text-decoration: none;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px;
+    background: #09b8ac;
+    color: white;
+    border-radius: 5px;
+    margin-left: 540px;
+    margin-top: 80px;
+}
+/*.................底部......................................*/
+footer{
+    width: 1360px;
+    height: 435px;
+    background-color: #f4f4f4;
+}
+footer>div{
+    /*    border: 1px solid black;*/
+    width: 1200px;
+    height: 220px;
+    margin-left: 53px;
+    padding-top: 70px;
+    position: relative;
+}
+footer>div>ul{
+    /*    border: 1px solid black;*/
+    list-style: none;
+    width: 190px;
+    height: 200px;
+    float: left;
+}
+footer>div>ul>li{
+    width: 190px;
+    height: 38px;
+    line-height: 38px;
+    cursor: pointer;
+    font-size: 13px;
+    color:black;
+    text-align: left;
+}
+footer>div>div{
+    /* border: 1px solid black;*/
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    right: 30px;
+}
+footer>div>div>p{
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+}
+footer>div>div>:nth-child(3)>:nth-child(1){
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px 25px 25px 25px;
+    background-image:url("icons.png") ;
+    background-repeat: no-repeat;
+    background-position: -98px -248px;
+}
+footer>div>div>:nth-child(3)>:nth-child(1):hover{
+    background-image:url("icons.png") ;
+    background-repeat: no-repeat;
+    background-position: -98px -198px;
+}
+footer>div>div>:nth-child(3)>:nth-child(2){
+    display:block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px 25px 25px 25px;
+    position: absolute;
+    left: 90px;
+    top:125px;
+    background-image:url("icons.png") ;
+    background-repeat: no-repeat;
+    background-position: -198px -248px;
+}
+footer>div>div>:nth-child(3)>:nth-child(2)>span{
+    width: 155px;
+    height: 146px;
+    position: absolute;
+    left: 33px;
+    top: 5px;
+    background-image:url("footerPicture/wx.png") ;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
+    /* background-color: white;*/
+    display: none;
+}
+footer>div>div>:nth-child(3)>:nth-child(2):hover>span{
+    display: block;
+}
+footer>div>div>:nth-child(3)>:nth-child(2):hover{
+    background-image:url("icons.png") ;
+    background-repeat: no-repeat;
+    background-position: -198px -198px;
+}
+footer>a{
+    position:relative;
+    left: 500px;
+    top: 0;
+}
+/*............................左边广告........................................................*/
+#sideNavAd{
+    display: block;
+    position:fixed;
+    top: 151px;
+    left: 0;
+    width: 90px;
+    height: 400px;
+    cursor: pointer;
+}
+/*..........打开页面弹出小窗口..........................................................*/
+#moveAD{
+    border: 1px solid rgb(6, 128, 178);
+    position:fixed;
+   bottom:-520px;
+    right: 0;
+    width:410px;
+    height:510px;
+    background: white;
+}
+#moveAD>:nth-child(1){
+    width: 410px;
+    height: 45px;
+    background:rgb(6, 128, 178);
+    position: relative;
+}
+#moveAD>:nth-child(1)>span{
+    position: absolute;
+    right: 70px;
+    top: 15px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("assistantPagePicture/white-min.png") no-repeat;
+    cursor: pointer;
+}
+#moveAD>:nth-child(1)>p{
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("assistantPagePicture/white-close.gif") no-repeat;
+    cursor: pointer;
+}
+#chatContent{
+  /*  border: 1px solid black;*/
+    width: 410px;
+    height: 330px;
+    background-color: #f2f2f2;
+    font-size: 13px;
+    overflow-y: scroll;
+    overflow-x: auto;
+    color: blue;
+}
+#emoticonBox{
+    border-top: 1px solid gray;
+    border-bottom: 1px dashed gray;
+    width: 410px;
+    height:30px;
+}
+.emoticon{
+    display:inline-block;
+    width: 20px;
+    height: 22px;
+    background:url("assistantPagePicture/icons4.gif") no-repeat -60px 0;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#inputBox{
+    width: 410px;
+    height:70px;
+}
+#send{
+    width: 410px;
+    height:35px;
+    background-color:rgb(6, 128, 178) ;
+    font-size: 16px;
+    text-align:center;
+    line-height: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+

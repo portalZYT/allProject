@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#box{
+    /* border: 1px solid black;*/
+    width: 1360px;
+    height: 1130px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #f8f8f8;
+}
+#navigate{
+    border: 1px solid gainsboro;
+    width: 1360px;
+    height: 60px;
+    background-color:white;
+}
+#navigate>:nth-child(1){
+    display: block;
+    position: absolute;
+    left: 220px;
+    top: 20px;
+}
+#navigate>:nth-child(2){
+    border-left: 1px solid gray;
+    width: 110px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+    position: absolute;
+    left: 365px;
+    top: 20px;
+}
+#navigate>:nth-child(3){
+    text-decoration: none;
+    color: gray;
+    font-size: 11px;
+    width: 28px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    left: 1000px;
+    top: 23px;
+}
+#navigate>:nth-child(3):hover{
+    border-bottom:1px solid gray ;
+}
+#navigate>:last-child{
+    display: block;
+    text-decoration: none;
+    color: gray;
+    font-size: 11px;
+    width: 70px;
+    height: 20px;
+    text-align:right;
+    position: absolute;
+    left: 1070px;
+    top: 23px;
+    background-image: url("registerPicture/cjwt.jpg");
+    background-repeat: no-repeat;
+}
+#body{
+    border:1px solid gainsboro;
+    border-radius: 5px;
+    width: 700px;
+    /* height: 525px;*/
+    position: relative;
+    top: 45px;
+    left: 325px;
+    background-color: white;
+}
+#body>p{
+    border-bottom: 1px solid gainsboro;
+    width: 660px;
+    height: 60px;
+    line-height:70px ;
+    margin-left: 10px;
+    padding-left: 15px;
+}
+#myForm{
+    border: 1px solid white;
+    width: 300px;
+    /* height: 190px;*/
+    margin-top: 60px;
+    margin-left: 220px;
+    position: relative;
+}
+#inputBoxDiv{
+    width: 290px;
+    height: 35px;
+    position:absolute ;
+    z-index: 10;
+}
+#inputBox{
+    /* border: 1px solid gray;*/
+    /*  display: block;*/
+    width: 290px;
+    height: 35px;
+    /* line-height: 35px;*/
+    border-radius: 3px;
+}
+#inputBox:focus{
+    box-shadow: 2px 2px 1px gray;
+    outline-color: gray;
+}
+#inputBoxWarn{/*.............................*/
+  /*  height: 30px;*/
+    width: 200px;
+   /* border: 1px solid blue;*/
+    font-size: 13px;
+    color: #e44142;
+    margin-left: 5px;
+    margin-top: 5px;
+    display: none;
+}
+#recommend{
+    width: 290px;
+    border: 1px solid gray;
+    position: absolute;
+    top: 43px;
+    left: 0;
+    background-color: white;
+    display: none;
+}
+.Ema{
+   /* border: 1px solid black;*/
+    width: 290px;
+    height: 30px;
+    line-height: 40px;
+    font-size: 11px;
+    cursor: pointer;
+}
+#recommend>:last-child{
+    width: 290px;
+    height: 30px;
+    line-height: 30px;
+    background-color:gainsboro;
+    font-size: 11px;
+}
+#registerDisply{
+    /* border: 1px solid blue;*/
+    width: 285px;
+    display: none;
+}
+#identifyCodeInput{
+    width: 162px;
+    height: 35px;
+    margin-top: 60px;
+    border-radius: 1px;
+    /*  display: none;*/
+}
+#yanZhengMa{
+    border: 1px solid gray;
+    display: inline-block;
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 0;
+    margin-left: 10px;
+}
+#yanZhengMaWarn{
+    display: inline-block;
+    width: 130px;
+    height: 15px;
+    font-size: 10px;
+    color: red;
+}
+#useName{
+    display: block;
+    width: 285px;
+    height: 38px;
+    margin-top: 10px;
+}
+#useNameWarn{
+    /* border: 1px solid black;*/
+    width: 285px;
+    height: 30px;
+    font-size: 11px;
+    color: gray;
+    display: none;
+}
+#passwardName{
+    display: block;
+    width: 285px;
+    height: 38px;
+    margin-top: 20px;
+}
+#passwardNameWarn{
+    /*  border: 1px solid black;*/
+    width: 285px;
+    height: 30px;
+    font-size: 11px;
+    color: gray;
+    display: none;
+}
+#suggest{
+    /* border: 1px solid black;*/
+    width: 280px;
+    height: 40px;
+    margin-left: 0px;
+    font-size: 12px;
+    color: gray;
+    margin-top: 40px;
+    display: none;
+}
+#agreement{
+    /* border: 1px solid black;*/
+    width: 280px;
+    position: relative;
+    margin-top: 40px;
+}
+#registerNow{
+    text-decoration: none;
+    display: block;
+    width: 290px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #e44142;
+    border-radius: 2px;
+    color: white;
+    margin-top: 15px;
+}
+#allWarning{
+    margin-top: 5px;
+    font-size: 11px;
+    color: red;
+    display: none;
+}
+#bottoM{
+    /* border: 1px solid black;*/
+    width: 290px;
+    height: 220px;
+    position:relative;
+    left: 220px;
+}
+#bottoM>p{
+    /* border: 1px solid black;*/
+    width: 290px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+    margin-top: 65px;
+}
+#bottoM>a{
+    display: block;
+    float: left;
+    /*   border: 1px solid black;*/
+    width: 70px;
+    height: 70px;
+    background-image:url("registerPicture/lxfs.png");
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}
+#bottoM>:nth-child(2){
+    background-position:  -287px 2px;
+}
+#bottoM>:nth-child(2):hover{
+    background-position:  -287px -73px;
+}
+#bottoM>:nth-child(3){
+    background-position:  -365px 2px;
+}
+#bottoM>:nth-child(3):hover{
+    background-position:  -365px -73px;
+}
+#bottoM>:nth-child(4){
+    background-position:  3px 2px;
+}
+#bottoM>:nth-child(4):hover{
+    background-position:  3px -73px;
+}
+#bottoM>:last-child{
+    background-image:url("registerPicture/github.png");
+    background-repeat: no-repeat;
+    background-position:  3px 2px;
+}
+#bottoM>:last-child:hover{
+    background-position:  3px -70px;
+}
+#banQuan{
+    position:relative;
+    top: 75px;
+    left: 500px;
+}

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>headerTopRightNone</title>
+    <script src="jQueryLibrary/jquery-3.2.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #headerTopRightNone{
+            border: 1px solid #ccc;
+            width:700px;
+            height: 500px;
+            position: absolute;
+            top:80px;
+            left: 100px;
+        }
+        .headerTopRightNoneContent{
+            border-left: 1px solid #ccc;
+            width: 215px;
+            /*height: 422px;*/
+            float: left;
+            margin-top: 20px;
+            margin-left: 5px;
+            padding-left: 8px;
+        }
+        .headerTopRightNoneContentHeard{
+            border-bottom: 1px solid #ccc;
+            width: 210px;
+            height:25px;
+        }
+        .headerTopRightNoneContentHeard>h2{
+            display: inline-block;
+            font-size: 15px;
+            color:black;
+            margin-right:75px;
+        }
+        .headerTopRightNoneContentHeard>a{
+            text-decoration: none;
+            font-size: 14px;
+            color: #707e91;
+        }
+        .headerTopRightNoneContentHeard>a:hover{
+            color: red;
+        }
+        .headerTopRightNoneContent>span{
+           display: block;
+            /* border: 1px solid red;*/
+            width: 210px;
+            /*height: 33px;*/
+            line-height: 33px;
+            font-size: 12px;
+            position: relative;
+            /* color: #707e91;*/
+        }
+        .headerTopRightNoneContentBody>li{
+            list-style: none;
+           /* border: 1px solid red;*/
+            width: 210px;
+            /*height: 33px;*/
+            line-height: 33px;
+            font-size: 12px;
+            position: relative;
+           /* color: #707e91;*/
+        }
+        .headerTopRightNoneContentBody>li>span{
+            display:inline-block;
+            border: 1px solid #ff4e00;
+            width: 15px;
+            height: 15px;
+            line-height:15px;
+            text-align: center;
+            font-size: 8px;
+            color: white;
+            position: absolute;
+            z-index: 10;
+            left: 5px;
+            top: 8px;
+            background-color: #ff4e00;
+        }
+        .headerTopRightNoneContentBody>li>p{
+            display:inline-block;
+            border: 1px solid grey;
+            width: 15px;
+            height: 15px;
+            line-height:15px;
+            text-align: center;
+            font-size: 8px;
+            color: grey;
+            position: absolute;
+            z-index: 10;
+            left: 5px;
+            top: 8px;
+        }
+        .titleW{
+            display: inline-block;
+           /* border: 1px solid black;*/
+            width: 160px;
+            height: 30px;
+            text-decoration: none;
+            color: #707e91;
+            font-size: 14px;
+             margin-left:30px;
+            /*display: none;*/
+        }
+        .headerTopRightNoneContentBody>li>div{
+            border: 1px solid #ccc;
+            width: 200px;
+            height: 85px;
+            display: none;
+        }
+        .headerTopRightNoneContentBody>li>div>p{
+            width: 198px;
+            height: 28px;
+            margin-left: 1px;
+            background-color: black;
+            position: absolute;
+            bottom: 2px;
+            opacity: 0.8;
+        }
+        .headerTopRightNoneContentBody>li>div>a{
+            display: inline-block;
+            text-decoration: none;
+            color: #aaa;
+            font-size: 14px;
+            position: absolute;
+            z-index: 11;
+            height: 28px;
+            line-height:28px;
+            width: 60px;
+            padding-left: 20px;
+        }
+        .headerTopRightNoneContentBody>li>div>a>i{
+            display: block;
+            width: 14px;
+            height: 15px;
+            position: absolute;
+            left: 0;
+            top: 7px;
+        }
+        .jinRuGuanWangLogo{
+            background:url("picture/ost_rank_sp.png") no-repeat;
+        }
+        .xiaZaiYouXiLogo{
+            background:url("picture/ost_rank_sp.png") no-repeat -13px 0;
+        }
+        .jinRuGuanWang{
+            bottom: 0;
+            left: 10px;
+        }
+        .jinRuGuanWang:hover{
+            color: red;
+            text-decoration:underline;
+        }
+        .jinRuGuanWang:hover>i{
+            background:url("picture/ost_rank_sp.png") no-repeat 0 -17px;
+        }
+         .xiaZaiYouXi:hover{
+            color: red;
+             text-decoration:underline;
+        }
+        .xiaZaiYouXi:hover>i{
+            background:url("picture/ost_rank_sp.png") no-repeat -13px -17px;
+        }
+        .xiaZaiYouXi{
+            bottom: 0;
+            right:20px;
+        }
+        #trangle{
+            width: 25px;
+            height: 30px;
+            position: absolute;
+            top: -15px;
+            right: -10px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function(){
+            $(".headerTopRightNoneContentBody").find("li").mouseover(function () {
+                  $(this).find(".titleW").css("display","none").end().siblings().find(".titleW").css("display","inline-block");
+                  $(this).find("div").css("display","block").end().siblings().find("div").css("display","none");
+            });
+        })
+    </script>
+</head>
+<body>
+    <div id="headerTopRightNone">
+        <div id="trangle"><img src="picture/jianTou.png" alt=""></div>
+        <div class="headerTopRightNoneContent" style="border-left: none">
+            <div class="headerTopRightNoneContentHeard">
+                <h2 class="rank-title">新游排行榜</h2>
+                <a href="#">更多&gt;&gt;</a>
+            </div>
+            <span style="color: #999">
+                    排名&ensp;&ensp;游戏
+                </span>
+            <ul class="headerTopRightNoneContentBody">
+                <li>
+                    <span>1</span>
+                    <a href="#" style="display: none" class="titleW">冒险岛2</a>
+                    <div style="display: block;background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span>2</span>
+                    <a href="#" class="titleW">极品飞车</a>
+                    <div style="background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span>3</span>
+                    <a href="#" class="titleW">流放之路</a>
+                    <div style="background: url('picture/qzds-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>4</p>
+                    <a href="#" class="titleW">变形金刚</a>
+                    <div style="background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>5</p>
+                    <a href="#" class="titleW">火源计划</a>
+                    <div style="background: url('picture/hyjh-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>6</p>
+                    <a href="#" class="titleW">极品飞车</a>
+                    <div style="background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>7</p>
+                    <a href="#" class="titleW">刀锋铁骑</a>
+                    <div style="background: url('picture/lfzl-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>8</p>
+                    <a href="#" class="titleW">刀锋铁骑</a>
+                    <div style="background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>9</p>
+                    <a href="#" class="titleW">剑灵洪门崛起</a>
+                    <div style="background: url('picture/hyjh-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>10</p>
+                    <a href="#" class="titleW">蛇蛇争霸</a>
+                    <div style="background: url('picture/sszb-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="headerTopRightNoneContent">
+            <div class="headerTopRightNoneContentHeard">
+                <h2 class="rank-title">热门排行榜</h2>
+                <a href="#">更多&gt;&gt;</a>
+            </div>
+            <span style="color: #999">
+                    排名&ensp;&ensp;游戏
+                </span>
+            <ul class="headerTopRightNoneContentBody">
+                <li>
+                    <span>1</span>
+                    <a href="#" style="display: none" class="titleW">冒险岛2</a>
+                    <div style="display: block;background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span>2</span>
+                    <a href="#" class="titleW">极品飞车</a>
+                    <div style="background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span>3</span>
+                    <a href="#" class="titleW">流放之路</a>
+                    <div style="background: url('picture/qzds-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>4</p>
+                    <a href="#" class="titleW">变形金刚</a>
+                    <div style="background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>5</p>
+                    <a href="#" class="titleW">火源计划</a>
+                    <div style="background: url('picture/hyjh-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>6</p>
+                    <a href="#" class="titleW">极品飞车</a>
+                    <div style="background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>7</p>
+                    <a href="#" class="titleW">刀锋铁骑</a>
+                    <div style="background: url('picture/lfzl-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>8</p>
+                    <a href="#" class="titleW">刀锋铁骑</a>
+                    <div style="background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>9</p>
+                    <a href="#" class="titleW">剑灵洪门崛起</a>
+                    <div style="background: url('picture/hyjh-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>10</p>
+                    <a href="#" class="titleW">蛇蛇争霸</a>
+                    <div style="background: url('picture/sszb-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="headerTopRightNoneContent">
+            <div class="headerTopRightNoneContentHeard">
+                <h2 class="rank-title" style="margin-right: 40px">新品手游排行榜</h2>
+                <a href="#">更多&gt;&gt;</a>
+            </div>
+            <span style="color: #999">
+                    排名&ensp;&ensp;游戏
+                </span>
+            <ul class="headerTopRightNoneContentBody">
+                <li>
+                    <span>1</span>
+                    <a href="#" style="display: none" class="titleW">冒险岛2</a>
+                    <div style="display: block;background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span>2</span>
+                    <a href="#" class="titleW">极品飞车</a>
+                    <div style="background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span>3</span>
+                    <a href="#" class="titleW">流放之路</a>
+                    <div style="background: url('picture/qzds-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>4</p>
+                    <a href="#" class="titleW">变形金刚</a>
+                    <div style="background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>5</p>
+                    <a href="#" class="titleW">火源计划</a>
+                    <div style="background: url('picture/hyjh-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>6</p>
+                    <a href="#" class="titleW">极品飞车</a>
+                    <div style="background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>7</p>
+                    <a href="#" class="titleW">刀锋铁骑</a>
+                    <div style="background: url('picture/lfzl-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>8</p>
+                    <a href="#" class="titleW">刀锋铁骑</a>
+                    <div style="background: url('picture/mxd2-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>9</p>
+                    <a href="#" class="titleW">剑灵洪门崛起</a>
+                    <div style="background: url('picture/hyjh-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>10</p>
+                    <a href="#" class="titleW">蛇蛇争霸</a>
+                    <div style="background: url('picture/sszb-2.jpg') no-repeat 10px 3px">
+                        <p></p>
+                        <a href="#" class="jinRuGuanWang">
+                            进入官网
+                            <i class="jinRuGuanWangLogo"></i>
+                        </a>
+                        <a href="#" class="xiaZaiYouXi">
+                            下载游戏
+                            <i class="xiaZaiYouXiLogo"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>注册2.0版</title>
+    <link rel="stylesheet" href="register2.css">
+</head>
+<body>
+<div id="box">
+    <!--...............注册页面顶部.................................................................-->
+    <div id="navigate">
+        <a href="http://localhost:63342/51CTOweb/hompage2.html"><img src="registerPicture/logo.jpg"></a>
+        <p>账号通行证</p>
+        <a href="http://localhost:63342/51CTOweb/login2.html">登录</a>
+        <a href="#">常见问题</a>
+    </div>
+    <!--.................主体部分......................................................................-->
+    <div id="body">
+        <p>注册账号</p>
+        <form id="myForm"><!--....整个表单.......................................................-->
+            <div id="inputBoxDiv">
+                <input id="inputBox" value="" placeholder="请输入邮箱或手机号" onfocus="inputBoxShuRu()" onblur="judge5()">
+                <p id="inputBoxWarn"></p>    <!--....输入框下面的提示警告栏...........................................-->
+                <div id="recommend">     <!--.........检测到@时出现的邮箱种类供客户查找-->
+                    <p class="Ema"></p>
+                    <p class="Ema"></p>
+                    <p class="Ema"></p>
+                    <p class="Ema"></p>
+                    <p class="Ema"></p>
+                    <p class="Ema"></p>
+                    <p class="Ema"></p>
+                    <p class="Ema"></p>
+                    <p class="Ema"></p>
+                    <p class="Ema"></p>
+                    <p>请使用以上邮箱进行注册</p>
+                </div>
+            </div><!--输入框...................................................-->
+            <div id="registerDisply">   <!--.....当检测到@时出现验证码、用户名输入框,没有检测到时是隐藏状态...........................-->
+                <input type="text" id="identifyCodeInput" value="" placeholder="请输入下图中的验证码" onblur="identifCodInput()">
+                <br>
+                <span id="yanZhengMaWarn"></span>
+                <br>
+                <span style="text-align: center;color: green;font-weight: bold" id="yanZhengMa">1111</span>
+                <input type="text" placeholder="用户名" value="" id="useName" onfocus="useNme()" onblur="useNmeW()">
+                <p id="useNameWarn"></p>
+                <input type="password" placeholder="密码" value="" id="passwardName" onfocus="pasWadName()" onblur="pasWadNameW()">
+                <p id="passwardNameWarn"></p>
+            </div>  <!--.....当检测到@时出现验证码、用户名输入框,没有检测到时是隐藏状态...........................-->
+            <p id="suggest">请您输入QQ、163、126、gmail、139、新浪等常用邮箱</p>
+            <br>
+            <div id="agreement"><!--同意协议选项.................................................-->
+                <input type="checkbox" checked >
+                <span style="font-size: 12px">我已经认真阅读并同意</span>
+                <a href="http://home.51cto.com/user/service?reback=" style="text-decoration: none;font-size: 12px">《51CTO服务条款》</a>
+                <br>
+            </div><!--同意协议选项.................................................-->
+            <p  id="allWarning"></p><!--当整个表单内容验证不通过时出现警告或提示，隐藏....................-->
+            <a type="button"  id="registerNow" href="javascript:void(0)">立即注册</a><!--注册按钮..................................-->
+        </form>
+        <div id="bottoM">
+            <p>使用第三方账号</p>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div><!--注册表单下面的内容..........................................................-->
+    </div>
+    <div id="banQuan">
+        <img src="registerPicture/banquan.png">
+    </div>
+</div>
+<script src="register2.js" type="text/javascript"></script>
+</body>
+</html>

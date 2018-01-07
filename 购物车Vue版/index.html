@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- <link rel="stylesheet" href="css/demo.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="page-header">自制购物车</h3>
+
+        <div id="demo" class="row">
+            <div class="col-sm-6">
+                <h2>货架 {{'ASD'|lowercase}}</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>N</th>
+                                <th>品名</th>
+                                <th class="text-right">单价</th>
+                                <th class="text-right">存量</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(row,index) in data1">
+                                <td>{{index+1}}</td>
+                                <td>{{row.name}}</td>
+                                <td class="text-right">{{row.price | currency}}</td>
+                                <td class="text-right">{{row.qty}}</td>
+                                <td>
+                                    <div v-show="row.qty>0" class="btn btn-xs btn-primary" @click="add(row)">
+                                        <i class="glyphicon glyphicon-plus"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h2>购物车</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>N</th>
+                                <th>品名</th>
+                                <th class="text-right">单价</th>
+                                <th class="text-center" colspan="3">数量</th>
+                                <th class="text-right">总价</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(row,index) in cart">
+                                <td>{{ index + 1 }}</td>
+                                <td>{{ row.name }}</td>
+                                <td class="text-right">{{ row.price | currency }}</td>
+                                <td>
+                                    <div class="btn btn-xs btn-primary btn-warning" @click="minus(row)">
+                                        <i class="glyphicon glyphicon-minus "></i>
+                                    </div>
+                                </td>
+                                <td class="text-center">{{ row.qty }} </td>
+                                <td>
+                                    <div class="btn btn-xs btn-primary " @click="add(row)">
+                                        <i class="glyphicon glyphicon-plus "></i>
+                                    </div>
+                                </td>
+                                <td class="text-right">{{ row.price * row.qty | currency}}</td>
+
+                                <td>
+                                    <div class="btn btn-xs btn-primary btn-danger" @click="rmv(row,index)">
+                                        <i class="glyphicon glyphicon-remove "></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <!-- <th colspan="8">总金额：{{total | currency}}</th> -->
+                                <th colspan="8">
+                                    总金额：{{total | currency}}
+                                    <span>实付金额：{{shiFu|currency}}</span>
+                                    <span style="color:red">直接省：{{total-shiFu|currency}}</span>
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <pre>{{cart}}</pre>
+        </div>
+    </div>
+    <script src="js/vue.js "></script>
+    <script>
+        var vm = new Vue({
+            el: '#demo',
+            //过滤器filter语法：数据 | 过滤器名（必须有空格）参数 参数.... 
+            filters: {
+                //大写转换器
+                uppercase: function (str) {
+                    return str.toString().toUpperCase()
+                },
+                // 小写转换器 
+                lowercase: function (str) {
+                    return str.toString().toLowerCase()
+                },
+                //首字母大写
+                capitalize: function (str) {
+                    var a = str.toString().toLowerCase().split('');
+                    a[0] = a[0].toUpperCase();
+                    return a.join(" ")
+                },
+                // 加金钱单位
+                currency: function (num, ch) {
+                    var c = ch || "￥ ";
+                    return c + ((!isNaN(num * 1)) ? (num * 1).toFixed(2) : '');
+                }
+            },
+            data: {
+                data1: [
+                    {
+                        name: '纸巾',
+                        price: 1.5,
+                        qty: 200
+                    },
+                    {
+                        name: '香皂',
+                        price: 3.5,
+                        qty: 16
+                    },
+                    {
+                        name: '电水壶',
+                        price: 3.5,
+                        qty: 16
+                    },
+                    {
+                        name: '电风扇',
+                        price: 125,
+                        qty: 5
+                    },
+                    {
+                        name: '冰箱',
+                        price: 1170,
+                        qty: 3
+                    },
+                    {
+                        name: '打印机',
+                        price: 720,
+                        qty: 5
+                    }
+                ],
+                cart: [],
+                total: 0,
+                shiFu: 0,
+                rule: [{
+                    money: 100,
+                    discount: .95
+                }, {
+                    money: 500,
+                    discount: .93
+                }, {
+                    money: 1000,
+                    discount: .91
+                }, {
+                    money: 2000,
+                    discount: .88
+                }]
+            },
+            methods: {
+                add: function (arr) {
+                    var ii = -1;
+                    this.data1.forEach(function (el, index) {
+                        if (el.name == arr.name) {
+                            ii = index;
+                        }
+                    });
+                    if (this.data1[ii].qty <= 0) {
+                        return;
+                    }
+                    this.data1[ii].qty--;
+                    var found = false;
+                    for (var i = 0; i < this.cart.length; i++) {
+                        if (this.cart[i].name == arr.name) {
+                            this.cart[i].qty++;
+                            found = true;
+                        }
+                    }
+                    if (!found) {
+                        this.cart.push({
+                            name: arr.name,
+                            price: arr.price,
+                            qty: 1
+                        });
+                    }
+                },
+
+                minus: function (arr) {
+                    for (var i = 0; i < this.data1.length; i++) {
+                        if (this.data1[i].name == arr.name) {
+                            if (arr.qty <= 0) {
+                                break;
+                            }
+                            arr.qty--;
+                            this.data1[i].qty += 1;
+                            break;
+                        }
+                    }
+                },
+                rmv: function (arr, ii) {
+                    this.cart.splice(ii, 1);
+                    this.data1.forEach(function (el, index) {
+                        if (el.name == arr.name) {
+                            el.qty += arr.qty;
+                        }
+                    })
+                },
+                sum: function () {
+                    var num = 0;
+                    this.cart.forEach(function (el) {
+                        num += el.price * el.qty;
+                    })
+                    this.total = num
+                },
+                rul: function (n) {
+                    var p = 1;
+                    for (var i = 0; i < this.rule.length; i++) {
+                        if (n >= this.rule[i].money) {
+                            p = this.rule[i].discount;
+                        }
+                    }
+                    this.shiFu = n * p
+                }
+            }
+        })
+        vm.$watch("cart", function () {
+            this.sum();
+            this.rul(this.total)
+        }, { deep: true })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jQueryLibrary/jquery-3.2.1.min.js"></script>
+    <style>
+        #pageArea3{
+            width: 1360px;
+            height: 828px;
+            background: url("picture/gloryPoetry/in_poetry.jpg") 80px 0;
+            position: relative;
+        }
+        #pageArea3>div{
+            /*  border: 1px solid red;*/
+            width: 1200px;
+            height: 440px;
+            position:absolute;
+            left: 80px;
+            bottom: 155px;
+            overflow: hidden;
+        }
+        #pageArea3PicTwo{
+            border: 1px solid red;
+            width: 1200px;
+            height: 440px;
+            position: absolute;
+            z-index: 10;
+            display: none;
+        }
+        #pageArea3PicOne{
+            /* border: 1px solid blue;*/
+            width: 1200px;
+            height: 437px;
+            list-style: none;
+            float: left;
+            position:absolute;
+            /* display: none;*/
+        }
+        #pageArea3PicOne>li{
+            width: 282px;
+            height: 202px;
+            float: left;
+            margin-left:13px;
+            margin-top:12px;
+            position:relative;
+            cursor: pointer;
+        }
+        #pageArea3PicOne>li>div{
+            width: 282px;
+            height: 63px;
+            background-color:rgba(2, 10, 33,1);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        #pageArea3PicOne>li>div>p{
+            width: 282px;
+            height: 30px;
+            color: white;
+            font-size: 18px;
+            line-height:30px;
+            text-align: center;
+        }
+        #pageArea3PicOne>li>div>span{
+            display: block;
+            width: 282px;
+            height: 25px;
+            color: white;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        #pageArea3PicOne>li>div>span>i{
+            display: block;
+            font-style: normal;
+            width: 50px;
+            height:25px;
+            line-height: 25px;
+            font-size: 12px;
+            float: right;
+            padding-left: 20px;
+        }
+        #pageArea3PicOne>li>div>span>:nth-child(2){
+            background:url("picture/history/shiz.png") no-repeat 0 2px;
+            background-size: 20px 20px;
+        }
+        #pageArea3PicOne>li>div>span>:nth-child(1){
+            background:url("picture/history/icon.png") no-repeat 0 5px;
+            background-size: 15px 15px;
+        }
+        #pageArea3PicOne>li>a{
+            display:block;
+            /*  border: 1px solid red;*/
+            position: absolute;
+            left:0;
+            top: 0;
+            background-color: black;
+            opacity: 0;
+            width: 282px;
+            height: 202px;
+            transition: all 1s;
+        }
+        #pageArea3PicOne>li>a>img{
+            position: absolute;
+            left: 110px;
+            top: 75px;
+        }
+        #pageArea3PicOne>li:hover>a{
+            opacity:0.8;
+        }
+        #pageArea3>span{
+            display: block;
+            width: 60px;
+            height: 80px;
+            position: absolute;
+            cursor: pointer;
+        }
+        #pageArea3CliL{
+            left: 0;
+            top: 400px;
+            background:url("picture/gloryPoetry/left.png") navajowhite 4px 0;
+        }
+        #pageArea3CliR{
+            right: 0;
+            top: 400px;
+            background:url("picture/gloryPoetry/right.png") navajowhite -3px 0;
+        }
+        #pageArea3PicOne{
+            opacity: 1;
+            transition:  opacity 0.5s;
+        }
+        #pageArea3PicTwo{
+            opacity: 0;
+            transition:  opacity 0.5s;
+        }
+        #pageArea3>p{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            bottom: 85px;
+            cursor: pointer;
+        }
+        #pageArea3FocuOne{
+            left: 635px;
+        }
+        #pageArea3FocuTwo{
+            left: 695px;
+        }
+        .pageArea3Focubg1{
+            background: url("picture/gloryPoetry/sc_img_default.png") no-repeat -131px -364px;
+        }
+        .pageArea3Focubg2{
+            background: url("picture/gloryPoetry/sc_img_default.png") no-repeat -169px -364px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="pageArea3">   <!--.....荣耀诗会....................-->
+    <div>
+        <ul id="pageArea3PicOne">
+            <li>
+                <img src="picture/gloryPoetry/g1.png">
+                <div>
+                    <p>《荣耀诗会》出塞、凉州词</p>
+                                <span>
+                                    <i>1.6万</i>
+                                    <i>00:49</i>
+                                </span>
+                </div>
+                <a  href="#"><img src="picture/history/icon.png"></a>
+            </li>
+            <li>
+                <img src="picture/gloryPoetry/g2.png">
+                <div>
+                    <p>《荣耀诗会》出塞、凉州词</p>
+                                <span>
+                                    <i>1.6万</i>
+                                    <i>00:49</i>
+                                </span>
+                </div>
+                <a  href="#"><img src="picture/history/icon.png"></a>
+            </li>
+            <li>
+                <img src="picture/gloryPoetry/g3.jpg">
+                <div>
+                    <p>《荣耀诗会》出塞、凉州词</p>
+                                <span>
+                                    <i>1.6万</i>
+                                    <i>00:49</i>
+                                </span>
+                </div>
+                <a  href="#"><img src="picture/history/icon.png"></a>
+            </li>
+            <li>
+                <img src="picture/gloryPoetry/g4.png">
+                <div>
+                    <p>《荣耀诗会》出塞、凉州词</p>
+                                <span>
+                                    <i>1.6万</i>
+                                    <i>00:49</i>
+                                </span>
+                </div>
+                <a  href="#"><img src="picture/history/icon.png"></a>
+            </li>
+            <li>
+                <img src="picture/gloryPoetry/g5.png">
+                <div>
+                    <p>《荣耀诗会》出塞、凉州词</p>
+                                <span>
+                                    <i>1.6万</i>
+                                    <i>00:49</i>
+                                </span>
+                </div>
+                <a  href="#"><img src="picture/history/icon.png"></a>
+            </li>
+            <li>
+                <img src="picture/gloryPoetry/g4.png">
+                <div>
+                    <p>《荣耀诗会》出塞、凉州词</p>
+                                <span>
+                                    <i>1.6万</i>
+                                    <i>00:49</i>
+                                </span>
+                </div>
+                <a  href="#"><img src="picture/history/icon.png"></a>
+            </li>
+            <li>
+                <img src="picture/gloryPoetry/g2.png">
+                <div>
+                    <p>《荣耀诗会》出塞、凉州词</p>
+                                <span>
+                                    <i>1.6万</i>
+                                    <i>00:49</i>
+                                </span>
+                </div>
+                <a  href="#"><img src="picture/history/icon.png"></a>
+            </li>
+            <li>
+                <img src="picture/gloryPoetry/g1.png">
+                <div>
+                    <p>《荣耀诗会》出塞、凉州词</p>
+                                <span>
+                                    <i>1.6万</i>
+                                    <i>00:49</i>
+                                </span>
+                </div>
+                <a  href="#"><img src="picture/history/icon.png"></a>
+            </li>
+        </ul>
+        <ul id="pageArea3PicTwo">
+            <li><img src="picture/gloryPoetry/g4.png"></li>
+        </ul>
+    </div>
+    <span id="pageArea3CliL"></span>
+    <span id="pageArea3CliR"></span>
+    <p style="left: 635px" id="pageArea3FocuOne" class="pageArea3Focubg2"></p>
+    <p style="left: 695px" id="pageArea3FocuTwo" class="pageArea3Focubg1"></p>
+</div>
+<script>
+    $("#pageArea3CliL").click(function(){
+        $("#pageArea3PicOne").css({
+            'display':'none'
+        });
+        $("#pageArea3PicTwo").css({
+            'display':'block'
+        });
+        $("#pageArea3FocuOne").removeClass('pageArea3Focubg2').addClass("pageArea3Focubg1");
+        $("#pageArea3FocuTwo").removeClass('pageArea3Focubg1').addClass("pageArea3Focubg2")
+    });
+    $("#pageArea3CliR").click(function(){
+        $("#pageArea3PicOne").css({
+            'display':'block'
+        });
+        $("#pageArea3PicTwo").css({
+            'display':'none'
+        });
+        $("#pageArea3FocuTwo").removeClass('pageArea3Focubg2').addClass("pageArea3Focubg1");
+        $("#pageArea3FocuOne").removeClass('pageArea3Focubg1').addClass("pageArea3Focubg2")
+    });
+    $("#pageArea3FocuOne").click(function(){
+        $(this).removeClass('pageArea3Focubg1').addClass("pageArea3Focubg2");
+        $("#pageArea3FocuTwo").removeClass('pageArea3Focubg2').addClass("pageArea3Focubg1");
+        $("#pageArea3PicOne").css({
+            'display':'block'
+        });
+        $("#pageArea3PicTwo").css({
+            'display':'none'
+        });
+    });
+    $("#pageArea3FocuTwo").click(function(){
+        $(this).removeClass('pageArea3Focubg1').addClass("pageArea3Focubg2");
+        $("#pageArea3FocuOne").removeClass('pageArea3Focubg2').addClass("pageArea3Focubg1");
+        $("#pageArea3PicOne").css({
+            'display':'none'
+        });
+        $("#pageArea3PicTwo").css({
+            'display':'block'
+        });
+    });
+</script><
+</body>
+</html>

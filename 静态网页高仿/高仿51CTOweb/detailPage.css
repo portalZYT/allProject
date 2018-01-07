@@ -1,0 +1,599 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*..............吸顶式导航........................................................*/
+#gripNavigate{
+    position:relative;
+    z-index: 200;              /*整个吸顶式导航浏览器定位， z-index: 200; */
+    border: 1px solid ghostwhite;
+    width: 1360px;
+    height: 55px;
+    background-color: white;
+}
+#gripNavigate>:nth-child(1){
+    position: relative;
+    left: 80px;
+}
+#gripNavigate>:nth-child(4){
+    /*  border: 1px solid black;*/
+    font-size: 11px;
+    text-decoration: none;
+    color: gray;
+    position: absolute;
+    right: 200px;
+    top: 20px;
+}
+#gripNavigate>input{
+    border: 1px solid blue;
+    width: 205px;
+    height: 30px;
+    padding-left: 5px;
+    position: absolute;
+    left: 670px;
+    top: 15px;
+    background-image:url("gripNaviatePicture/icons.png");
+    background-repeat: no-repeat;
+    background-position: 213px -95px;
+    padding-right: 30px;
+}
+#gripNavigate>ul{
+    /*  border: 1px solid yellow;*/
+    list-style: none;
+    width: 420px;
+    position: absolute;
+    left: 220px;
+    top: 0;
+}
+#gripNavigate>ul>li{
+    /*   border: 1px solid black;*/
+    list-style: none;
+    float: left;
+    width: 80px;
+    height: 55px;
+    line-height:53px;
+    text-align: center;
+    font-size: 16px;
+}
+#gripNavigate>ul>li:hover{
+    background-color: #02baf2;
+    color: white;
+}
+#gripNavigateRight{
+    /* border: 1px solid gainsboro;*/
+    width: 30px;
+    height: 54px;
+    position: absolute;
+    right: 120px;
+    top: 0;
+    background-image: url("gripNaviatePicture/more_01.png");
+    background-repeat: no-repeat;
+    background-position: 9px 22px;
+}
+#gripNavigateRightNone{
+    border: 1px solid ghostwhite;
+    width: 1200px;
+    height: 230px;
+    position: absolute;
+    right: -1px;
+    top: 54px;
+    display: none;
+    background-color: white;
+}
+#gripNavigateRight:hover{
+    border: 1px solid gainsboro;
+}
+#gripNavigateRight:hover>div{
+    display: block;
+}
+#gripNavigateRightNone>ul{
+    /*border: 1px solid black;*/
+    width: 140px;
+    height: 190px;
+    float: left;
+    list-style: none;
+    margin-top: 25px;
+    font-family: "Helvetica Neue",
+    Helvetica, "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    微软雅黑,
+    Arial, sans-serif;
+}
+#gripNavigateRightNone>ul>li{
+    /* border: 1px solid blue;*/
+    width: 100px;
+    height: 30px;
+    line-height:30px;
+    text-align: center;
+    font-size: 11px;
+
+}
+#gripNavigateRightNone>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+#gripNavigateRightNone h6{
+    font-size: 14px;
+}
+#findCourse>div{
+    /*    border: 1px solid red;*/
+    width: 218px;
+    height: 411px;
+    position: absolute;
+    z-index: 1;
+    left: -60px;
+    top: 55px;
+    background-color: #02baf2 ;
+    display: none;
+}
+#findCourse:hover>div{
+    display: block;
+}
+#findCourse>div>div{
+    /*  border: 1px solid black;*/
+    border-top: 1px dashed white;
+    width: 212px;
+    height: 66px;
+    padding-left: 6px;
+    margin-top: 0;
+    /* margin-left: 12px;*/
+}
+#findCourse>div>div:hover{
+    background-color: white;
+}
+#findCourse>div>div:hover>div{
+    display: block;
+}
+#findCourse>div>div:hover>span>a{
+    color: black;
+}
+#findCourse>div>div>span{
+    display: block;
+    /*  border: 1px solid black;*/
+    width: 208px;
+    height: 25px;
+    text-align: left;
+    line-height: 30px;
+    /* margin-left: 3px;*/
+    font-size: 13px;
+}
+#findCourse>div>div>span>a{
+    text-decoration: none;
+    color: white;
+}
+.threeDiv{
+    border-top: 2px solid  #02baf2;
+    border-bottom: 2px solid  #02baf2;
+    border-right:2px solid  #02baf2 ;
+    width: 643px;
+    height: 406px;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+    left: 218px;
+    top: 0;
+    color: black;
+    display: none;
+}
+.threeDiv>h6{
+    /* border: 1px solid black;*/
+    width: 300px;
+    height: 35px;
+    line-height: 40px;
+    text-align: left;
+    margin-left: 25px;
+}
+.threeDiv>p{
+    /* border: 1px solid black;*/
+    width: 350px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    margin-left: 25px;
+}
+.threeDiv>p>a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+.threeDiv>span{
+    display: block;
+    /* border: 1px solid black;*/
+    width: 350px;
+    height: 155px;
+    margin-left: 25px;
+}
+.threeDiv>span>a{
+    display: block;
+    /*  border: 1px solid black;*/
+    width: 350px;
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+.threeDiv>img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/*...........侧导航...........................................*/
+#sideNav{
+    /*  border: 1px solid black;*/
+    width: 60px;
+    height: 350px;
+    position: fixed;
+    z-index: 100;
+    right: 25px;
+    top: 275px;
+}
+#sideNav>:nth-child(3){
+    display: block;
+    /*    border: 1px solid black;*/
+    width: 60px;
+    height: 60px;
+    background-image: url("gripNaviatePicture/slider_03.png");
+    background-repeat: no-repeat;
+}
+#sideNav>:nth-child(3):hover{
+    background-image: url("gripNaviatePicture/slider_03s.png");
+}
+#sideNav>:nth-child(4){
+    display: block;
+    /*  border: 1px solid black;*/
+    width: 60px;
+    height: 60px;
+    background-image: url("gripNaviatePicture/slider_05.png");
+    background-repeat: no-repeat;
+}
+#sideNav>:nth-child(4):hover{
+    background-image: url("gripNaviatePicture/slider_05s.png");
+}
+/*.........头部.............................................*/
+header{
+    width: 1360px;
+    height: 230px;
+}
+header>p{
+    width: 1250px;
+    height: 50px;
+    list-style: none;
+    margin-left: 60px;
+    position: relative;
+}
+header>p>a{
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    list-style: none;
+    float: left;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 18px;
+    position: relative;
+}
+header>p>a:hover{
+    background-color: #00b9f1;
+    color: white;
+}
+header>p button{
+    width: 50px;
+    height: 25px;
+    background-color: #00b9f1;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+header>p input{
+    width: 82px;
+    height: 30px;
+    margin-top: 10px;
+}
+/*.......................身体.................................*/
+main{
+/*    border:1px solid black;*/
+    width: 1360px;
+    height: 3050px;
+    position: relative;
+}
+#xuanXiang{
+    width: 1360px;
+    height: 50px;
+    background-color: #f4f4f4;
+    position:relative;
+}
+#xuanXiang>ul{
+    width: 490px;
+    height: 50px;
+    list-style: none;
+    margin-left: 60px;
+    position: absolute;
+}
+#xuanXiang>ul>li{
+  /*  border: 1px solid red;*/
+    width: 95px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+#xuanXiang>ul>li>span{
+    width: 15px;
+    height: 20px;
+    margin-left: 10px;background-image: url("icons.png");
+    background-repeat: no-repeat;
+    background-position: -150px -345px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: none;
+}
+#xuanXiang>:nth-child(2){
+    display: block;
+ /*   border: 1px solid red;*/
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    left: 540px;
+    top: 0;
+    cursor: pointer;
+}
+#xuanXiang>:nth-child(3){
+/*    border: 1px solid red;*/
+    width: 20px;
+    height: 20px;
+    line-height: 50px;
+    color: black;
+    position: absolute;
+    left: 640px;
+    top: 18px;
+    cursor: pointer;
+}
+#xuanXiang>:nth-child(4){
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 50px;
+    color: black;
+    position: absolute;
+    left: 665px;
+    top: 0;
+    cursor: pointer;
+}
+#xuanXiang>:nth-child(5){
+    display: block;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 50px;
+    color: gray;
+    position: absolute;
+    right: 80px;
+    top: 0;
+}
+.pic{
+ /*   border: 1px solid red;*/
+    height: 2890px;
+    width: 1360px;
+    display: none;
+    position: relative;
+}
+.pic>ul{
+  /*  border: 1px solid blue;*/
+    width: 1200px;
+    height: 2890px;
+    margin-left: 60px;
+    list-style: none;
+}
+.pic>ul>li{
+    /*border: 1px solid black;*/
+    width: 222px;
+    height: 285px;
+    float: left;
+    margin-top: 33px;
+    margin-left: 10px;
+    position: relative;
+}
+.pic>ul>li>a{
+ /*   border: 1px solid black;*/
+    display: block;
+    width: 222px;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.pic>ul>li>span{
+    display: block;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: black;
+   color: white;
+    font-size: 13px;
+    opacity: 0.8;
+}
+.pic>ul>li>div{
+ /*   border: 1px solid red;*/
+    width: 222px;
+    height: 150px;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+}
+.pic>ul>li:hover>a{
+    top: -35px;
+}
+.pic>ul>li:hover>div{
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+.pic>ul>li>div>a{
+    display: block;
+     width: 220px;
+     height: 45px;
+     font-size: 15px;
+    text-decoration: none;
+    color: black;
+ }
+.pic>ul>li>div>span{
+    display: block;
+/*    border: 1px solid black;*/
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    color: gray;
+}
+.pic>ul>li>div>p{
+/*    border: 1px solid black;*/
+    width: 220px;
+    height: 28px;
+    line-height: 25px;
+    font-size: 15px;
+}
+#mainBottom{
+/*    border: 1px solid black;*/
+    width: 1360px;
+    height: 105px;
+    position: relative;
+}
+#mainBottom>span{
+    display: block;
+   /* border: 1px solid black;*/
+    width: 980px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+#mainBottom>span>a{
+    display: inline-block;
+    border: 1px solid gainsboro;
+    background-color: #f4f4f4;
+    text-decoration: none;
+    color: black;
+    width: 40px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 11px;
+    margin-left: 8px;
+}
+#mainBottom>span>a:hover{
+    background-color: #00b9f1;
+}
+/*.................底部......................................*/
+footer{
+    width: 1360px;
+    height: 435px;
+    background-color: #f4f4f4;
+}
+footer>div{
+    /*    border: 1px solid black;*/
+    width: 1200px;
+    height: 220px;
+    margin-left: 53px;
+    padding-top: 70px;
+    position: relative;
+}
+footer>div>ul{
+    /*    border: 1px solid black;*/
+    list-style: none;
+    width: 190px;
+    height: 200px;
+    float: left;
+}
+footer>div>ul>li{
+    width: 190px;
+    height: 38px;
+    line-height: 38px;
+    cursor: pointer;
+    font-size: 13px;
+    color:black;
+    text-align: left;
+}
+footer>div>div{
+    /* border: 1px solid black;*/
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    right: 30px;
+}
+footer>div>div>p{
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+}
+footer>div>div>:nth-child(3)>:nth-child(1){
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px 25px 25px 25px;
+    background-image:url("icons.png") ;
+    background-repeat: no-repeat;
+    background-position: -98px -248px;
+}
+footer>div>div>:nth-child(3)>:nth-child(1):hover{
+    background-image:url("icons.png") ;
+    background-repeat: no-repeat;
+    background-position: -98px -198px;
+}
+footer>div>div>:nth-child(3)>:nth-child(2){
+    display:block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px 25px 25px 25px;
+    position: absolute;
+    left: 90px;
+    top:125px;
+    background-image:url("icons.png") ;
+    background-repeat: no-repeat;
+    background-position: -198px -248px;
+}
+footer>div>div>:nth-child(3)>:nth-child(2)>span{
+    width: 155px;
+    height: 146px;
+    position: absolute;
+    left: 33px;
+    top: 5px;
+    background-image:url("footerPicture/wx.png") ;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
+    /* background-color: white;*/
+    display: none;
+}
+footer>div>div>:nth-child(3)>:nth-child(2):hover>span{
+    display: block;
+}
+footer>div>div>:nth-child(3)>:nth-child(2):hover{
+    background-image:url("icons.png") ;
+    background-repeat: no-repeat;
+    background-position: -198px -198px;
+}
+footer>a{
+    position:relative;
+    left: 500px;
+    top: 0;
+}
